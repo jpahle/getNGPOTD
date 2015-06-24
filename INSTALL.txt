@@ -1,0 +1,10 @@
+# Mac OS
+mkdir ~/getNGPOTD
+cp getNGPOTD.sh ~/getNGPOTD
+cp getNGPOTD.plist ~/Library/LaunchAgents
+launchctl load ~/Library/LaunchAgents/getNGPOTD.plist
+
+# Linux
+mkdir ~./getNGPOTD
+cp getNGPOTD.sh ~/.getNGPOTD
+# use anacron to schedule daily runs of the script
