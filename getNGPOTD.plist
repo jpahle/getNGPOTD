@@ -4,12 +4,14 @@
 <dict>
     <key>Label</key>
     <string>getNGPOTD</string>
-    <key>EnableGlobbing</key>
-    <true/>
     <key>ProgramArguments</key>
     <array>
-        <string>~/getNGPOTD/getNGPOTD.sh</string>
+        <string>bash</string>
+        <string>-c</string>
+        <string>$HOME/getNGPOTD/getNGPOTD.sh</string>
     </array>
+    <key>RunAtLoad</key>
+     <true/>
     <key>StartCalendarInterval</key>
     <dict>
         <key>Hour</key>
